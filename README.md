@@ -1,16 +1,35 @@
-# React + Vite
+# Des souvenirs sous les étoiles
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Un blog personnel racontant mon voyage de trois jours à San Francisco, en Californie, pendant le week-end de Thanksgiving en octobre 2025.
 
-Currently, two official plugins are available:
+## Voir le site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[https://blogdevoyage.vercel.app/](https://blogdevoyage.vercel.app/)
 
-## React Compiler
+## Exécuter le projet localement
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clonez le dépôt :
 
-## Expanding the Oxlint configuration
+   ```bash
+   git clone https://github.com/Infinityplus6/Blog-de-Voyage.git
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+2. Accédez au dossier du projet :
+
+   ```bash
+   cd Blog-de-Voyage
+   ```
+
+3. Installez les dépendances :
+
+   ```bash
+   npm install
+   ```
+
+4. Lancez le serveur de développement :
+
+   ```bash
+   npm run dev
+   ```
+
+5. Ouvrez l'adresse locale affichée dans votre terminal pour consulter le site dans votre navigateur.
