@@ -1,0 +1,449 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
+
+/* ------------------------------
+   Global styles
+------------------------------ */
+
+:root {
+  --azure: #8ecae6;
+  --azure-light: #eaf6fc;
+  --azure-dark: #397a9b;
+  --border: #e3e9ed;
+  --text: #263746;
+  --muted: #687985;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* ------------------------------
+   Opening animation
+------------------------------ */
+
+.opening-animation,
+.intro-animation,
+.page-reveal,
+.animation-overlay {
+  display: none !important;
+}
+
+
+/* ------------------------------
+   Top banner
+------------------------------ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  min-height: 0;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("/sfskyline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.hero-overlay,
+.hero-top,
+.hero-bottom,
+.hero-eyebrow,
+.title-underline {
+  display: none !important;
+}
+
+.hero-title {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+}
+
+.hero-title h1 {
+  margin: 0;
+  color: white;
+  font-family: 'Caveat', cursive;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 600;
+  line-height: 1.1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* ------------------------------
+   Conclusion
+------------------------------ */
+
+.conclusion {
+  width: min(850px, 85%);
+  margin: 0 auto;
+  padding: 65px 0 75px;
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+.conclusion-card {
+  width: min(900px, 88%);
+  margin: 70px auto;
+  padding: 40px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.conclusion h2,
+.conclusion-card h2 {
+  color: var(--azure-dark);
+  font-family: 'Caveat', cursive;
+  font-size: 2.8rem;
+}
+
+.conclusion p {
+  margin: 0;
+  color: #46545e;
+  font-size: 1.05rem;
+  line-height: 2;
+  font-weight: 400;
+}
+.conclusion-card p {
+  line-height: 1.8;
+  color: var(--text);
+}
+
+
+/* ------------------------------
+   Bottom banner
+------------------------------ */
+
+.closing-hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  min-height: 0;
+  margin-top: 70px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("/acplane.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.closing-overlay {
+  display: none !important;
+}
+
+.closing-heading {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: black;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+  transform: translateY(110px);
+
+}
+
+.closing-heading > span,
+.closing-heading .title-underline {
+  display: none !important;
+}
+
+.closing-heading h2 {
+  margin: 0;
+  color: white;
+  font-family: 'Caveat', cursive;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 600;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px 6%;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  background: white;
+}
+
+footer a {
+  color: var(--azure-dark);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 750px) {
+  .hero {
+    height: 380px;
+  }
+
+  .closing-hero {
+    height: 300px;
+  }
+
+  .story {
+    width: 90%;
+  }
+
+  .story-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 45px 0;
+  }
+
+  .text-panel {
+    padding: 25px;
+  }
+
+  .image-frame {
+    height: 300px;
+  }
+
+  .conclusion,
+  .conclusion-card {
+    padding: 25px;
+  }
+}
+
+
+
+
+
+
+
+/* --------------------------------
+   INTRODUCTION
+-------------------------------- */
+
+.introduction {
+  padding: 100px 24px 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-content {
+  width: min(900px, 100%);
+  text-align: center;
+}
+
+.section-label {
+  display: block;
+  margin-bottom: 22px;
+  color: var(--azure-dark);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.intro-hook {
+  margin: 0 auto;
+  color: var(--azure-dark);
+  font-family: 'Caveat', cursive;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.intro-divider {
+  width: 65px;
+  height: 2px;
+  margin: 35px auto;
+  background: var(--azure);
+}
+
+.intro-description {
+  max-width: 790px;
+  margin: 0 auto;
+  font-size: 1.02rem;
+  line-height: 2;
+  color: #3c454b;
+}
+
+/* --------------------------------
+   STORY LAYOUT
+-------------------------------- */
+
+.story {
+  width: min(1220px, 88%);
+  margin: 0 auto;
+}
+
+.chapter-heading {
+  margin: 25px 0 65px;
+  padding: 65px 30px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.chapter-heading h2 {
+  max-width: 850px;
+  margin: 0 auto 18px;
+  color: var(--azure-dark);
+  font-family: 'Caveat', cursive;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.chapter-heading > p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: #515e67;
+  font-size: 1rem;
+}
+
+/* --------------------------------
+   STORY SECTIONS
+-------------------------------- */
+
+.story-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 55px;
+  align-items: center;
+  margin: 70px 0;
+}
+
+.text-panel {
+  position: relative;
+  min-width: 0;
+  padding: 45px 42px;
+
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+.section-number {
+  display: block;
+  margin-bottom: 8px;
+  color: #a9d8f3;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.text-panel h3 {
+  margin: 0 0 25px;
+  color: var(--azure-dark);
+  font-family: 'Caveat', cursive;
+  font-size: clamp(2.1rem, 3.5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.text-panel p {
+  margin: 0 0 22px;
+  color: #30383e;
+  font-size: 0.97rem;
+  line-height: 1.95;
+}
+
+.text-panel p:last-child {
+  margin-bottom: 0;
+}
+
+/* --------------------------------
+   IMAGES AND CAPTIONS
+-------------------------------- */
+
+.image-panel {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.image-frame {
+  width: 100%;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: var(--azure-pale);
+  box-shadow: var(--shadow);
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.image-frame:hover img {
+  transform: scale(1.045);
+}
+
+.image-panel figcaption {
+  padding: 15px 8px 0;
+  color: #687780;
+  font-size: 0.87rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* --------------------------------
+   SECTION DIVIDERS
+-------------------------------- */
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 85px 0;
+}
+
+.section-divider > span {
+  width: min(180px, 25%);
+  height: 1px;
+  background: var(--border);
+}
+
+.divider-decoration {
+  color: var(--azure);
+  font-size: 1.2rem;
+}
